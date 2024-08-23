@@ -36,3 +36,7 @@ Khi đến lượt, người chơi nhập tọa độ của ô muốn đánh d�
 
 ## Yêu cầu hệ thống
 Java JDK phiên bản 8 trở lên.
+
+## Ảnh minh họa
+![image](https://github.com/user-attachments/assets/d9323875-ccda-4224-a679-0bd590424bae)
+
