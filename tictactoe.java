@@ -41,11 +41,11 @@ public class TicTacToe {
 
     private static boolean isGameOver() {
         if (checkWin()) {
-            System.out.println("Player " + currentPlayerSymbol + " wins!");
+            System.out.println("Nguoi choi " + currentPlayerSymbol + " wins!");
             return true;
         }
         if (checkDraw()) {
-            System.out.println("The game is a draw!");
+            System.out.println("Hoa!");
             return true;
         }
         return false;
@@ -78,20 +78,20 @@ public class TicTacToe {
         int row, col;
         while (true) {
             try {
-                System.out.println("Player " + currentPlayerSymbol + "'s turn");
-                System.out.print("Enter row (0-2): ");
+                System.out.println("Den luot cua nguoi choi " + currentPlayerSymbol + ":");
+                System.out.print("Nhap hang (0-2): ");
                 row = scanner.nextInt();
-                System.out.print("Enter column (0-2): ");
+                System.out.print("Nhap cot (0-2): ");
                 col = scanner.nextInt();
                 if (row >= 0 && row < BOARD_SIZE && col >= 0 && col < BOARD_SIZE && board[row][col] == ' ') {
                     board[row][col] = currentPlayerSymbol;
                     break;
                 } else {
-                    System.out.println("This move is not valid");
+                    System.out.println("Buoc di nay khong hop le");
                 }
             } catch (Exception e) {
-                System.out.println("Invalid input. Please enter numbers between 0 and 2.");
-                scanner.next(); // clear the invalid input
+                System.out.println("Khong hop le. Hay nhap gia tri tu 0-2");
+                scanner.next(); 
             }
         }
     }
